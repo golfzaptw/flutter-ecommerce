@@ -9,28 +9,28 @@ class HorizontalList extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         children: <Widget>[
           Category(
-            image_location: 'images/categories/bag.jpg',
-            image_caption: 'Bag',
+            imageLocation: 'images/categories/bag.jpg',
+            imageCaption: 'Bag',
           ),
           Category(
-            image_location: 'images/categories/bike.jpg',
-            image_caption: 'Bike',
+            imageLocation: 'images/categories/bike.jpg',
+            imageCaption: 'Bike',
           ),
           Category(
-            image_location: 'images/categories/education.jpg',
-            image_caption: 'Education',
+            imageLocation: 'images/categories/education.jpg',
+            imageCaption: 'Education',
           ),
           Category(
-            image_location: 'images/categories/phone.jpg',
-            image_caption: 'Phone',
+            imageLocation: 'images/categories/phone.jpg',
+            imageCaption: 'Phone',
           ),
           Category(
-            image_location: 'images/categories/shirt.jpg',
-            image_caption: 'T-Shirt',
+            imageLocation: 'images/categories/shirt.jpg',
+            imageCaption: 'T-Shirt',
           ),
           Category(
-            image_location: 'images/categories/shoes.jpg',
-            image_caption: 'Shoes',
+            imageLocation: 'images/categories/shoes.jpg',
+            imageCaption: 'Shoes',
           ),
         ],
       ),
@@ -39,10 +39,10 @@ class HorizontalList extends StatelessWidget {
 }
 
 class Category extends StatelessWidget {
-  final String image_location;
-  final String image_caption;
+  final String imageLocation;
+  final String imageCaption;
 
-  const Category({Key key, this.image_location, this.image_caption})
+  const Category({Key key, this.imageLocation, this.imageCaption})
       : super(key: key);
 
   @override
@@ -55,14 +55,14 @@ class Category extends StatelessWidget {
           width: 100.0,
           child: ListTile(
             title: Image.asset(
-              image_location,
+              imageLocation,
               width: 100.0,
               height: 80.0,
             ),
             subtitle: Container(
               alignment: Alignment.topCenter,
               child: Text(
-                image_caption,
+                imageCaption,
                 style: TextStyle(fontSize: 12.0),
               ),
             ),
